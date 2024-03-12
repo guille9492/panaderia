@@ -70,8 +70,8 @@
         //creamos la sentencia SQL de inserción para pedidos, la ejecutamos y cerramos
         
         
-        $insertarpedido= "INSERT pedidos (cantidad) 
-                            VALUES ('$Cantidadpan')";
+        $insertarpedido= "INSERT pedidos (tipopan, cantidad) 
+                            VALUES ('$seleccionar','$Cantidadpan')";
 
         if ($Nombre) {
             if (mysqli_query($conn,$insertarpedido)) {
