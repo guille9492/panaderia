@@ -18,6 +18,7 @@
 
         //De pedidos
         $Cantidadpan = $_POST["Cantidadpan"];
+        $tipopan = $_POST["seleccionar"];
 
         //conexión a la base de datos
         $servername = 'localhost';
@@ -71,7 +72,7 @@
         
         
         $insertarpedido= "INSERT pedidos (tipopan, cantidad) 
-                            VALUES ('$seleccionar','$Cantidadpan')";
+                            VALUES ('$tipopan','$Cantidadpan')";
 
         if ($Nombre) {
             if (mysqli_query($conn,$insertarpedido)) {
