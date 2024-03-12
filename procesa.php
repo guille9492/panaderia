@@ -17,7 +17,7 @@
         $Cantidad = $_POST["Cantidad"];
 
         //De pedidos
-        $Cantidadpan = $_POST["Cantidadpan"];
+        $Cantidadpan = $_POST["seleccionar"];
 
         //conexión a la base de datos
         $servername = 'localhost';
